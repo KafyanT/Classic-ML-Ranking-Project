@@ -109,3 +109,7 @@ Cross-encoder сам по себе лучше baseline (0.461 против 0.439
 2. Открыть `Ad_Ranking_Colab.ipynb` в Colab, Runtime → Change runtime type → T4 GPU.
 3. Runtime → Run all. Все случайности фиксированы `SEED = 42`. Эмбеддинги и оценки cross-encoder кешируются на Drive.
 4. Результат — `solution.csv` (и `solution_alt*.csv`) в корне Drive.
+
+## Ревью кода
+
+Каждый Pull Request автоматически проверяет Claude (`.github/workflows/claude-code-review.yml`) по правилам из [`CLAUDE.md`](CLAUDE.md). Вопрос или повторное ревью — комментарий `@claude ...` в PR.
