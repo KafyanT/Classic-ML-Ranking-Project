@@ -130,3 +130,7 @@ Cross-encoder сам по себе лучше baseline (0.469 против 0.454
 2. Открыть `Ad_Ranking_Colab.ipynb` в Colab, Runtime → Change runtime type → T4 GPU.
 3. Runtime → Run all. Версии библиотек зафиксированы (первая ячейка, `requirements.txt`), все случайности, включая PyTorch, — `SEED = 42`. Эмбеддинги и оценки cross-encoder кешируются на Drive. Без GPU ноутбук отработает без эксперимента с cross-encoder — на итоговую модель это не влияет.
 4. Результат — `solution.csv` (и `solution_alt*.csv`) в корне Drive.
+
+## Ревью кода
+
+Каждый Pull Request автоматически проверяет Claude (`.github/workflows/claude-code-review.yml`) по правилам из [`CLAUDE.md`](CLAUDE.md). Вопрос или повторное ревью — комментарий `@claude ...` в PR.
