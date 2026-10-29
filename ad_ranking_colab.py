@@ -29,9 +29,7 @@ Original file is located at
 """
 
 # версии зафиксированы (тот же список — в requirements.txt); torch и остальное, кроме polars и lightgbm, уже стоят в Colab
-!pip install -q --extra-index-url https://download.pytorch.org/whl/cu130
-    polars==2.1.0 lightgbm==4.6.0 torch==2.11.0+cu130 transformers==5.20.2 sentence-transformers==5.7.0 \
-    scikit-learn==1.6.1 numpy==2.1.3 pandas==2.2.3 pyarrow==23.0.1 matplotlib==3.10.0 seaborn==0.13.2
+!pip install -q --extra-index-url https://download.pytorch.org/whl/cu130 polars==2.1.0 lightgbm==4.6.0 torch==2.11.0+cu130 transformers==5.20.2 sentence-transformers==5.7.0 scikit-learn==1.6.1 numpy==2.1.3 pandas==2.2.3 pyarrow==23.0.1 matplotlib==3.10.0 seaborn==0.13.2
 
 import gc
 import hashlib
